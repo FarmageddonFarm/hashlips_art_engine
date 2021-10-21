@@ -9,8 +9,8 @@ const { NETWORK } = require(path.join(basePath, "constants/network.js"));
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Farmer Ryker";
+const description = "The son of one of our Infamous Farmers";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -30,13 +30,12 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 5,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "background" },
+      { name: "tool" },
+      { name: "body" },
+      { name: "shirt" },
+      { name: "shorts" },
+      { name: "hat" },
     ],
   },
 ];
@@ -78,7 +77,7 @@ const extraMetadata = {};
 
 const rarityDelimiter = "#";
 
-const uniqueDnaTorrance = 10000;
+const uniqueDnaTorrance = 10;
 
 const preview = {
   thumbPerRow: 5,
