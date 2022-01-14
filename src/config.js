@@ -9,9 +9,9 @@ const { NETWORK } = require(path.join(basePath, "constants/network.js"));
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Farmer Ryker";
-const description = "The son of one of our Infamous Farmers";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Test FG";
+const description = "Testing";
+const baseUri = "ipfs://QmPDSADZ7v17fZXvoJ4dkT5c6GkW75As6UygXdJWXK721M/";
 
 const solanaMetadata = {
   symbol: "NOC",
@@ -28,14 +28,9 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 1000,
     layersOrder: [
-      { name: "background" },
-      { name: "tool" },
-      { name: "body" },
-      { name: "shirt" },
-      { name: "shorts" },
-      { name: "hat" },
+      { name: "images" },
     ],
   },
 ];
