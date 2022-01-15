@@ -130,7 +130,7 @@ const addMetadata = (_dna, _edition) => {
     date: dateTime,
     ...extraMetadata,
     attributes: attributesList,
-    compiler: "HashLips Art Engine",
+    compiler: "Farmageddon Engine",
   };
   if (network == NETWORK.sol) {
     tempMetadata = {
@@ -221,9 +221,9 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
   return mappedDnaToLayers;
 };
 
-const isDnaUnique = (_DnaList = new Set(), _dna = "") => {
-  return !_DnaList.has(_dna);
-};
+// const isDnaUnique = (_DnaList = new Set(), _dna = "") => {
+//   return !_DnaList.has(_dna);
+// };
 
 const createDna = (_layers) => {
   let randNum = [];
@@ -304,9 +304,9 @@ const startCreating = async () => {
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
       let newDna = createDna(layers);
-      if (isDnaUnique(dnaList, newDna)) {
-        let results = constructLayerToDna(newDna, layers);
-        let loadedElements = [];
+       if (newDna = newDna) {
+         let results = constructLayerToDna(newDna, layers);
+         let loadedElements = [];
 
         results.forEach((layer) => {
           loadedElements.push(loadLayerImg(layer));
@@ -347,7 +347,7 @@ const startCreating = async () => {
           console.log(
             `You need more layers or elements to grow your edition to ${layerConfigurations[layerConfigIndex].growEditionSizeTo} artworks!`
           );
-          process.exit();
+          // process.exit();
         }
       }
     }
